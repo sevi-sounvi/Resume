@@ -6,68 +6,95 @@
     <meta name="keywords", content="Elena, resume">
     <meta name="description", content="Это резюме Елены">
     <title>Резюме</title>
+    <link rel="stylesheet" href="resume.css">
 </head>
-<body>
-    <img src="https://sun1-86.userapi.com/s/v1/ig1/eXP06yrguGDK6gG6fA_WJQrA28ZaMYYwNY1gYUfTeJedvCjzsCx6NzHUWPSBRB3UHdobzip1.jpg?size=400x400&quality=96&crop=518,4,1915,1915&ava=1" width="150" alt="Мое фото">
 
-    <h1>Елена</h1>
-    <p>Я учусь на <strong>3 курсе в <em>РКСИ.</em></strong></p>
-    <hr>
-    <h3>Мои хобби</h3>
-    <ol>
-        <li>Танцы</li>
-        <li>Чтение</li>
-        <li>Прога</li>
-        <li>Юмор</li>
-    </ol>
-    <hr>
-    <h3>Опыт работы</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>GHJ</td>
-                <td>Frontend</td>
-                <td>2020-2021</td>
-            </tr>
-            <tr>
-                <td>FJDK</td>
-                <td>Frontend</td>
-                <td>2021-2022</td>
-            </tr>
-            <tr>
-                <td>CS></td>
-                <td>Frontend</td>
-                <td>2022-now</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h4>Соц. сети:</h4>
-    <a href="https://vk.com/feed" target="_blank">VK</a>
-    <hr>
-    <h3>Связаться со мной</h3>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+<body>
+
+
+    <div class="container">
+        <div class="info">
+            <img src="https://sun1-86.userapi.com/s/v1/ig1/eXP06yrguGDK6gG6fA_WJQrA28ZaMYYwNY1gYUfTeJedvCjzsCx6NzHUWPSBRB3UHdobzip1.jpg?size=400x400&quality=96&crop=518,4,1915,1915&ava=1" class="avatar" alt="Мое фото">
+            <div class="info-text">
+                <h1>Елена</h1>
+                <p> Мне 17 лет <br> Я учусь на <strong>3 курсе в <em>РКСИ</em></strong></p>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+
+
+        <div class="card bg-green">
+            <h3>Мои хобби</h3>
+            <ol class="list">
+                <li>Танцы</li>
+                <li>Чтение</li>
+                <li>Програмирование</li>
+                <li>Юмор</li>
+            </ol>
+            <hr>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="4"  placeholder="Введите сообщение..."></textarea>
+
+
+        <div class="card bg-red">
+        <h3>Опыт работы</h3>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>GHJ</td>
+                        <td>Frontend</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td>FJDK</td>
+                        <td>Frontend</td>
+                        <td>2021-2022</td>
+                    </tr>
+                    <tr>
+                        <td>CS></td>
+                        <td>Frontend</td>
+                        <td>2022-now</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <button type="submit">Отправить!</button>
-    </form>
+        <hr>
+
+
+        <div class="card bg-yellow">
+            <h4>Соц. сети:</h4>
+            <a href="https://vk.com/feed" target="_blank">VK</a>
+            <hr>
+        </div>
+
+
+        
+        <form action="/" class="form">
+            <h3>Связаться со мной</h3>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="4"  placeholder="Введите сообщение..."></textarea>
+            </div>
+            <button class="btn" type="submit">Отправить!</button>
+        </form>
+    </div>
+
+
 </body>
 </html>
